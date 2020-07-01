@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>project(main)</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  
+  <style>
+     *{
+      font-family: 'Noto Sans KR', sans-serif;
+      background-color: #white;
+
+
+      margin: 0px;
+      padding: 0px;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+   .container{
+      width: 100%; margin: 0 auto;
+
+    }
+
+    .header{
+      height: 100px;
+    }
+
+    .nav-bar{
+      height: 60px;
+      padding-top: 20px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    .nav-bar #logo{
+      line-height: 60px;
+    }
+
+    .nav-bar #logo  a{
+      font-size: 60px;
+    }
+
+    .nav-bar #menu{
+      float: right;
+      list-style: none;
+
+      padding: 0;
+      margin: 0;
+    }
+
+
+
+    .nav-bar #menu li{
+      float: left;
+      margin-left: 30px;
+      line-height: 60px;
+    }
+
+    .nav-bar #menu li a{
+      color: #545454;
+      font-size: 13px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+   
+    .nav-bar #menu li a:hover{
+      color: black;
+      border-bottom: solid 2px #234382
+    }
+
+
+   .tittle{
+    height: 60px;
+    text-align: center;
+    margin-bottom: 100px;
+   }
+
+   .container2{
+
+    position: relative;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    margin: 0 auto;
+   }
+
+   .container2 .card{
+
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background-color: #e3e3e3;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+   }
+
+   .container2 .card:hover{
+    height: 420px;
+
+   }
+
+   .container2 .card .imgbx{
+
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  }
+
+   .container2 .card .imgbx img{
+    max-width: 100%;
+    border-radius: 4px;
+   }
+
+   .container2 .card .content{
+    
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+   }
+
+   .container2 .card .content a{
+
+    text-decoration: none;
+    color: #111
+
+   }
+
+   .container2 .card:hover .content{
+    
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+   }
+
+
+  /* .footer{
+
+      width:100%;
+      float: none;
+      clear: left;
+      height: 50px;
+
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 80px;
+   }
+
+    .footer a{
+      margin-left: 10px;
+      margin-right: 10px;
+      text-decoration: none;
+
+      margin-top: 30px;
+    }
+    */
+  
+ 
+
+    h2{
+      font-size: 40px;
+      font-weight: 400;
+
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: 30px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <div class="nav-bar">
+      <a href="Main page.html" id="logo">
+        <img src="https://i.postimg.cc/QCjm6c9N/logo-01.png" height="20">
+      </a>
+
+      <ul id="menu">
+        <li><a href="Main page.html">ABOUT</a></li>
+        <li><a href="project(main).html">PROJECTS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+
+    </div>
+    </div>
+
+    <div class="tittle">
+      <h2>Project</h2>
+    </div>
+
+    <div class="container2">
+      <div class="card">
+        <div class="imgbx">
+          <a href="project(Dyson).html">
+            <img src="https://i.postimg.cc/cLm0hQRx/img-01.png">
+          </a>
+        </div>
+        <div class="content">
+          <a href="project(Dyson).html"> 
+            <h3>Dyson Vacuum Cleaner</h3>
+            <p>세부적인 내부 파팅부터
+            고급스러운 분위기로 제작된
+          광고 프로젝트를 만나보세요</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="imgbx">
+          <a href="project(LG).html">
+            <img src="https://i.postimg.cc/pdcxbRc3/img-02.png">
+          </a>
+        </div>
+        <div class="content">
+          <a href="project(LG).html">
+            <h3>LG Puricare</h3>
+            <p>LG Puricare 라인의
+            분해, 작동 모션까지 구현하려 노력한
+          3D 렌더 영상 프로젝트를 만나보세요</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="imgbx">
+          <a href="project(Lowpoly).html">
+            <img src="https://i.postimg.cc/rmdTq3vs/img-03.png">
+          </a>
+        </div>
+        <div class="content">
+          <a href="project(Lowpoly).html">
+            <h3>Lowpoly + Civilization</h3>
+            <p>세계적으로 유명한 게임 시리즈
+            문명의 Lowpoly 버전 모바일
+            3D 렌더 영상 프로젝트를 만나보세요</p>
+          </a>
+        </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+  </div>
+
+</body>
+</html>
